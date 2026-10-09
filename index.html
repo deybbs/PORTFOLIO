@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dave Valenzuela — IT Student &amp; Graphic Designer</title>
+    <meta name="description"
+        content="Portfolio of Dave Valenzuela, a third-year Information Technology student interested in development and UI/UX design.">
+    <meta name="theme-color" content="#050505">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050505'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-weight='800' font-size='30' letter-spacing='-2' fill='%238ea2ff'%3EDV%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="intro" id="intro" aria-hidden="true">
+        <p class="intro__name">Dave Valenzuela</p>
+    </div>
+
+    <!-- Background layers (decorative) -->
+    <div class="bg" aria-hidden="true">
+        <div class="bg__grid"></div>
+        <div class="bg__spot" id="spot"></div>
+        <div class="bg__grain"></div>
+    </div>
+    <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__ring"></span></div>
+
+    <header class="site-header" id="site-header">
+        <a class="brand" href="#home" aria-label="Dave Valenzuela, back to top">DV</a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="menu-toggle__label">Menu</span>
+            <span class="menu-toggle__bars" aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="#home" data-nav>Home</a></li>
+                <li><a href="#about" data-nav>About</a></li>
+                <li><a href="#education" data-nav>Education</a></li>
+                <li><a href="#skills" data-nav>Skills</a></li>
+                <li><a href="#projects" data-nav>Projects</a></li>
+                <li><a href="#contact" data-nav>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="wrap hero__grid">
+
+                <div class="hero__media">
+                    <div class="hero__photo" id="hero-photo">
+                        <div class="hero__frame" aria-hidden="true"></div>
+                        <figure class="hero__figure">
+                            <img src="assets/images/dave.jpg" width="480" height="600"
+                                alt="Portrait of Dave Valenzuela">
+                            alt="Portrait placeholder for Dave Valenzuela">
+                        </figure>
+                    </div>
+                    <p class="hero__caption">Calauan, Laguna</p>
+                </div>
+
+                <div class="hero__text">
+                    <h1 class="hero__name" id="hero-title" aria-label="Dave">
+                        <span class="ch" aria-hidden="true" style="--i:0"><span>D</span></span><span class="ch"
+                            aria-hidden="true" style="--i:1"><span>A</span></span><span class="ch" aria-hidden="true"
+                            style="--i:2"><span>V</span></span><span class="ch" aria-hidden="true"
+                            style="--i:3"><span>E</span></span>
+                    </h1>
+                    <p class="hero__role">IT Student · Graphic Designer</p>
+                    <p class="hero__intro">I am a third-year Information Technology student with a strong interest in
+                        technology, development, and UI/UX design. I enjoy creating functional, user-friendly, and
+                        visually appealing digital experiences. I am continuously improving my technical skills and
+                        gaining practical experience through academic and personal projects.</p>
+                    <a class="hero__cue" href="#about" data-cursor>
+                        <span class="hero__cue-line" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT / AT A GLANCE -->
+        <section class="section section--tight" id="about" aria-labelledby="about-title">
+            <div class="wrap">
+                <h2 class="visually-hidden" id="about-title">At a glance</h2>
+                <dl class="facts" data-reveal-group>
+                    <div data-reveal>
+                        <dt>Location</dt>
+                        <dd>Calauan, Laguna</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>Year level</dt>
+                        <dd>3rd Year</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>Program</dt>
+                        <dd>BS Information Technology</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>Interests</dt>
+                        <dd>Web and software development, UI/UX design, databases</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section" id="education" aria-labelledby="education-title">
+            <div class="wrap split">
+                <div class="split__head" data-reveal-group>
+                    <h2 class="section-title" id="education-title" data-reveal>Education</h2>
+                    <p class="section-lede" data-reveal>Where I study now, and where it started.</p>
+                </div>
+
+                <ol class="timeline" data-reveal-group>
+                    <li class="timeline__item timeline__item--current" data-reveal>
+                        <h3>Polytechnic University of the Philippines – Calauan</h3>
+                        <p class="timeline__program">BS Information Technology</p>
+                        <dl class="timeline__meta">
+                            <div>
+                                <dt>Level</dt>
+                                <dd>3rd Year</dd>
+                    <li>2024-2025 - Dean's Lister</li>
+                    <li>2025-2026 - Dean's Lister</li>
+            </div>
+            <div>
+                <dt>Expected graduation</dt>
+                <dd>2028</dd>
+            </div>
+            </dl>
+            </li>
+            <li class="timeline__item" data-reveal>
+                <h3>Dayap National Integrated High School</h3>
+                <p class="timeline__program">Senior High School</p>
+                <ul class="timeline__list">
+                    <li>Honor — 2022-2023</li>
+                    <li>Honor — 2023-2024</li>
+                </ul>
+            </li>
+            </ol>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <div class="wrap split">
+                <div class="split__head" data-reveal-group>
+                    <h2 class="section-title" id="skills-title" data-reveal>Skills</h2>
+                    <p class="section-lede" data-reveal>Tools and technologies I have worked with through coursework and
+                        personal projects, grouped by what they are used for.</p>
+                </div>
+
+                <div class="skills" data-reveal>
+                    <div class="skills__tabs" role="tablist" aria-label="Skill categories">
+                        <button class="skills__tab" role="tab" id="tab-dev" aria-controls="panel-dev"
+                            aria-selected="true" type="button">Development <span class="skills__count">8</span></button>
+                        <button class="skills__tab" role="tab" id="tab-db" aria-controls="panel-db"
+                            aria-selected="false" tabindex="-1" type="button">Database <span
+                                class="skills__count">7</span></button>
+                        <button class="skills__tab" role="tab" id="tab-design" aria-controls="panel-design"
+                            aria-selected="false" tabindex="-1" type="button">Design &amp; Tools <span
+                                class="skills__count">8</span></button>
+                        <button class="skills__tab" role="tab" id="tab-other" aria-controls="panel-other"
+                            aria-selected="false" tabindex="-1" type="button">Other <span
+                                class="skills__count">4</span></button>
+                        <button class="skills__tab" role="tab" id="tab-soft" aria-controls="panel-soft"
+                            aria-selected="false" tabindex="-1" type="button">Soft skills <span
+                                class="skills__count">12</span></button>
+                    </div>
+
+                    <div class="skills__panels">
+                        <ul class="skills__list" role="tabpanel" id="panel-dev" aria-labelledby="tab-dev" tabindex="0">
+                            <li style="--i:0">HTML</li>
+                            <li style="--i:1">CSS</li>
+                            <li style="--i:2">JavaScript</li>
+                            <li style="--i:3">PHP</li>
+                            <li style="--i:4">Java</li>
+                            <li style="--i:5">C</li>
+                            <li style="--i:6">Laravel</li>
+                            <li style="--i:7">Spring Boot</li>
+                            <li style="--i:8">C#</li>
+                        </ul>
+                        <ul class="skills__list" role="tabpanel" id="panel-db" aria-labelledby="tab-db" tabindex="0"
+                            hidden>
+                            <li style="--i:0">MySQL</li>
+                            <li style="--i:1">PostgreSQL</li>
+                            <li style="--i:2">SQL</li>
+                            <li style="--i:3">PL/pgSQL</li>
+                            <li style="--i:4">Database Design</li>
+                            <li style="--i:5">ERD</li>
+                            <li style="--i:6">Normalization</li>
+                        </ul>
+                        <ul class="skills__list" role="tabpanel" id="panel-design" aria-labelledby="tab-design"
+                            tabindex="0" hidden>
+                            <li style="--i:0">Figma</li>
+                            <li style="--i:1">Canva</li>
+                            <li style="--i:2">Photoshop</li>
+                            <li style="--i:3">Microsoft Word</li>
+                            <li style="--i:4">Microsoft Excel</li>
+                            <li style="--i:5">Microsoft PowerPoint</li>
+                            <li style="--i:6">Git / GitHub</li>
+                            <li style="--i:7">dbdiagram.io</li>
+                        </ul>
+                        <ul class="skills__list" role="tabpanel" id="panel-other" aria-labelledby="tab-other"
+                            tabindex="0" hidden>
+                            <li style="--i:0">UI/UX Design</li>
+                            <li style="--i:1">Web Development</li>
+                            <li style="--i:2">Software Development</li>
+                            <li style="--i:3">Database Management</li>
+                        </ul>
+                        <ul class="skills__list" role="tabpanel" id="panel-soft" aria-labelledby="tab-soft" tabindex="0"
+                            hidden>
+                            <li style="--i:0">Communication</li>
+                            <li style="--i:1">Teamwork &amp; Collaboration</li>
+                            <li style="--i:2">Problem-Solving</li>
+                            <li style="--i:3">Adaptability</li>
+                            <li style="--i:4">Time Management</li>
+                            <li style="--i:5">Creativity</li>
+                            <li style="--i:6">Attention to Detail</li>
+                            <li style="--i:7">Critical Thinking</li>
+                            <li style="--i:8">Willingness to Learn</li>
+                            <li style="--i:9">Responsibility &amp; Reliability</li>
+                            <li style="--i:10">Organization</li>
+                            <li style="--i:11">Patience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="wrap">
+                <div class="projects-head" data-reveal-group>
+                    <h2 class="section-title" id="projects-title" data-reveal>Projects</h2>
+                    <p class="section-lede" data-reveal>Larger builds first, followed by smaller coursework and database
+                        activities.</p>
+                </div>
+
+                <h3 class="group-title" data-reveal>Major projects</h3>
+
+                <div class="project-grid">
+
+                    <!-- 01 -->
+                    <article class="project project--card" data-cursor="large" data-github="" data-reveal>
+                        <div class="project__media">
+                            <img src="assets/images/calajuan.jpg" width="1200" height="750" loading="lazy"
+                                alt="Screenshot of the CalaJuan mobile tourism guide">
+                        </div>
+                        <div class="project__body">
+                            <p class="project__num">01</p>
+                            <p class="project__status">2026 — In Progress</p>
+                            <h4 class="project__title">CalaJuan</h4>
+                            <p class="project__sub">A Mobile Tourism Guide and Recommendation System</p>
+                            <p class="project__desc">A mobile tourism guide and recommendation system focused on helping
+                                users discover tourism destinations and related information.</p>
+                            <dl class="project__meta">
+                                <div>
+                                    <dt>Category</dt>
+                                    <dd>Mobile / Software / Research</dd>
+                                </div>
+                                <div>
+                                    <dt>Role</dt>
+                                    <dd>Developer / Researcher</dd>
+                                </div>
+                                <div>
+                                    <dt>Technologies</dt>
+                                    <dd>To be finalized</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <!-- 02 -->
+                    <article class="project project--card" data-cursor="large" data-github="https://github.com/Ihsanity13/POKEDEX-JAVA.git" data-reveal>
+                        <div class="project__media">
+                            <img src="assets/images/pokedex.jpg" width="1200" height="750" loading="lazy"
+                                alt="Screenshot of the Pokémon Pokédex web app">
+                        </div>
+                        <div class="project__body">
+                            <p class="project__num">02</p>
+                            <p class="project__status">2026 — Completed</p>
+                            <h4 class="project__title">Pokémon Pokédex</h4>
+                            <p class="project__desc">A web application built with Java and Spring Boot, using PokeAPI as
+                                its data source.</p>
+                            <dl class="project__meta">
+                                <div>
+                                    <dt>Category</dt>
+                                    <dd>Web / Software</dd>
+                                </div>
+                                <div>
+                                    <dt>Role</dt>
+                                    <dd>Developer</dd>
+                                </div>
+                            </dl>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>MySQL</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>PokeAPI</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- 03 -->
+                    <article class="project project--card" data-cursor="large" data-github="https://github.com/deybbs/bloodlink.git" data-reveal>
+                        <div class="project__media">
+                            <img src="assets/images/bloodlink.jpg" width="1200" height="750" loading="lazy"
+                                alt="Screenshot of the BloodLink website">
+                        </div>
+                        <div class="project__body">
+                            <p class="project__num">03</p>
+                            <p class="project__status">2026 — Completed</p>
+                            <h4 class="project__title">BloodLink</h4>
+                            <p class="project__desc">A school web project built with HTML, CSS, and JavaScript.</p>
+                            <dl class="project__meta">
+                                <div>
+                                    <dt>Category</dt>
+                                    <dd>Web / School</dd>
+                                </div>
+                                <div>
+                                    <dt>Role</dt>
+                                    <dd>Developer</dd>
+                                </div>
+                            </dl>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- 04 -->
+                    <article class="project project--card" data-cursor="large" data-reveal>
+                        <div class="project__media">
+                            <div class="ph ph--term" role="img"
+                                aria-label="Screenshot placeholder for FCFS CPU Scheduling"><span></span></div>
+                        </div>
+                        <div class="project__body">
+                            <p class="project__num">04</p>
+                            <p class="project__status">2025 — Completed</p>
+                            <h4 class="project__title">FCFS CPU Scheduling</h4>
+                            <p class="project__desc">A command-line program written in C that implements First-Come,
+                                First-Served CPU scheduling.</p>
+                            <dl class="project__meta">
+                                <div>
+                                    <dt>Category</dt>
+                                    <dd>Terminal / Command-Line Program</dd>
+                                </div>
+                                <div>
+                                    <dt>Role</dt>
+                                    <dd>Developer</dd>
+                                </div>
+                            </dl>
+                            <ul class="tags" aria-label="Technology">
+                                <li>C</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+                <h3 class="group-title group-title--minor" data-reveal>Minor projects and activities</h3>
+
+                <ol class="minor-list" data-reveal-group>
+                    <li class="minor" data-cursor="large" data-reveal>
+                        <span class="minor__num">05</span>
+                        <div class="minor__main">
+                            <h4>Laravel Product Management System</h4>
+                        </div>
+                        <p class="minor__stack">Laravel, PHP, PostgreSQL</p>
+                        <p class="minor__info">Web / Database<br>2026 — Completed</p>
+                    </li>
+                    <li class="minor" data-cursor="large" data-reveal>
+                        <span class="minor__num">06</span>
+                        <div class="minor__main">
+                            <h4>Online Store Database System</h4>
+                            <p class="minor__detail"><span>ERD, relationships, PK/FK, normalization (1NF–3NF)</span></p>
+                        </div>
+                        <p class="minor__stack">PostgreSQL, SQL, dbdiagram.io</p>
+                        <p class="minor__info">Database Design<br>2026 — Completed</p>
+                    </li>
+                    <li class="minor" data-cursor="large" data-reveal>
+                        <span class="minor__num">07</span>
+                        <div class="minor__main">
+                            <h4>Student Enrollment Database</h4>
+                            <p class="minor__detail"><span>Students, subjects, enrollments, relationships,
+                                    constraints</span></p>
+                        </div>
+                        <p class="minor__stack">PostgreSQL, SQL</p>
+                        <p class="minor__info">Database<br>2026 — Completed</p>
+                    </li>
+                    <li class="minor" data-cursor="large" data-reveal>
+                        <span class="minor__num">08</span>
+                        <div class="minor__main">
+                            <h4>DBA — Transactions, Functions &amp; Triggers</h4>
+                            <p class="minor__detail"><span>Transactions, functions, triggers</span></p>
+                        </div>
+                        <p class="minor__stack">PostgreSQL, SQL, PL/pgSQL</p>
+                        <p class="minor__info">Database<br>2026 — Completed</p>
+                    </li>
+                    <li class="minor" data-cursor="large" data-reveal>
+                        <span class="minor__num">09</span>
+                        <div class="minor__main">
+                            <h4>Indexed, View-Based &amp; Optimized Queries</h4>
+                            <p class="minor__detail"><span>Indexes, views, materialized views, EXPLAIN ANALYZE</span>
+                            </p>
+                        </div>
+                        <p class="minor__stack">PostgreSQL, SQL</p>
+                        <p class="minor__info">Database / Performance<br>2026 — Completed</p>
+                    </li>
+                    <li class="minor" data-cursor="large" data-reveal>
+                        <span class="minor__num">10</span>
+                        <div class="minor__main">
+                            <h4>PHP Form &amp; Session System</h4>
+                            <p class="minor__detail"><span>POST forms, validation, arrays, loops, sessions</span></p>
+                        </div>
+                        <p class="minor__stack">HTML, PHP, CSS</p>
+                        <p class="minor__info">Web / School<br>2026 — Completed</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="wrap contact__inner" data-reveal-group>
+                <p class="contact__kicker" data-reveal>Get in touch</p>
+                <h2 class="contact__name" id="contact-title" data-reveal>Dave<br>Valenzuela</h2>
+
+                <div class="contact__grid" data-reveal>
+                    <div>
+                        <p class="contact__label">Location</p>
+                        <p class="contact__value">Calauan, Laguna</p>
+                    </div>
+                    <div>
+                        <p class="contact__label">Email</p>
+                        <p class="contact__value"><a class="contact__link"
+                                href="mailto:davelionelvalenzuela@gmail.com">davelionelvalenzuela@gmail.com</a></p>
+                    </div>
+                    <div>
+                        <p class="contact__label">Social</p>
+                        <p class="contact__value contact__social">
+                            <a class="contact__link" href="https://www.facebook.com/profile.php?id=61578732848991"
+                                target="_blank" rel="noopener noreferrer" title="Facebook Profile">
+                                Facebook
+                            </a>
+                            <a class="contact__link" href="https://github.com/deybbs" target="_blank"
+                                rel="noopener noreferrer" title="GitHub Profile">
+                                GitHub
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="contact__actions" data-reveal>
+                    <a class="btn primary" href="assets/Dave-Resume.pdf" download>
+                        Download Resume
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
